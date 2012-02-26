@@ -1,6 +1,6 @@
 {\rtf1\ansi\ansicpg1252\cocoartf1138\cocoasubrtf230
 {\fonttbl\f0\fswiss\fcharset0 Helvetica;}
-{\colortbl;\red255\green255\blue255;}
+{\colortbl;\red255\green255\blue255;\red38\green38\blue38;}
 \paperw11900\paperh16840\margl1440\margr1440\vieww20520\viewh11160\viewkind0
 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
 
@@ -45,8 +45,51 @@
 - Statement modifiers\
 \
 
+\b\fs48 Session 2 : Objects and Classes\
+
+\fs36 Objects -
+\b0 \
+- Objects First! Rationale. \
+- What is an Object?\
+- In Ruby, everything is a Object, Object is everything.\
+- design objects, create objects, giving objects abilities, ask them to perform actions\
+- to get something done, you ask the object to do it\
+- create a generic object\
+- before you ask the object to do something, you have to teach to object how to do it\
+- teach the generic object - define method\
+- to get things done send messages to the object / call methods on the object\
+- obj.message (receiver.message)\
+- create a more meaningful object\
+- every object in Ruby has a object_id\
+- respond_to? - reflection / introspection\
+
+\b \
+Classes -
+\b0 \
+- Class is a object, Object is a class\
+- \cf2 When a new class is created (typically using class Name ... end), an object of type Class is created and assigned to a global constant (Name in this case).\cf0 \
+- new is a constructor, a method NOT a keyword\
+- new - allocates memory, calls initialize instance method  \
+- initialize method\
+- instance variables store the state of the objects - @foo, @bar\
+- each object will have its own distinct set of instance variables, hence an unique state.\
+- setters and getter methods\
+- methods that let you access and manipulate the state of an object, allowing the outside world to interact with the object are called its attributes. \
+- external state is exposed through attributes\
+- a class defines state via attributes and behavior through methods\
+- attr_reader, attr_writer, attr_accessor - create accessor methods\
+- require\
+- Access control : public, protected, private\
+- AC is determined dynamically\
+- methods are public by default, except for initialize which is always private\
+- private methods, receiver is always "self"\
+- public, protected and private are functions unlike C++/Java where there are keywords\
+- How does puts method work?
 \b\fs48 \
-\
+\pard\pardeftab720\sl360
+\cf0 \
+\pard\pardeftab720\sa240
+\cf0 \
 
 \b0\fs36 \
 \
