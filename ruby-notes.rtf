@@ -84,15 +84,50 @@ Classes -
 - methods are public by default, except for initialize which is always private\
 - private methods, receiver is always "self"\
 - public, protected and private are functions unlike C++/Java where there are keywords\
-- How does puts method work?
-\b\fs48 \
-\pard\pardeftab720\sl360
-\cf0 \
-\pard\pardeftab720\sa240
-\cf0 \
-
-\b0\fs36 \
+- How does puts method work?\
 \
+
+\b Container, Blocks and Iterators -\
+
+\b0 - Array and Hashes - two collections built-in Ruby\
+- Hashes - associative arrays, maps, dictionaries\
+\
+
+\b Self -
+\b0 \
+- Current object\
+- read only\
+- where instance vars are found\
+- default receiver for method calls\
+- What changes self\
+ 
+\i   - method call
+\i0 \
+      - takes the receiver\
+      - sets self as receiver\
+      - looks for method in the method table (class) for that object\
+      - invokes the method\
+      - restores the original value of self when the method returns\
+     - No receiver\
+      - doesn't reset self, hence self stays the same\
+      - doesn't restore self\
+      - just looks up and method call\
+ 
+\i   - Class/Module definition\
+
+\i0      - class definition is executable code in Ruby\
+ - Instance variables - look up in self\
+- Context\
+    - top level (main object of Object class)\
+ - Singleton Classes\
+  - Eigen/ghost/meta/anonymous\
+  - Will be created when you add a method to an object\
+  - Normal but hidden/anonymous\
+  - No name\
+  - only one per object\
+  - created lazily when you need it.\
+ - Not accessible via a constant\
+ - You can't instantiate from this class\
 \
 \
 \
